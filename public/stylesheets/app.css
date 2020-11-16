@@ -1,0 +1,112 @@
+body
+{
+    font-family: 'Nunito', sans-serif;
+    background: #ffd89b;
+    background: -webkit-linear-gradient(to right, #19547b, #ffd89b);
+    background: linear-gradient(to right, #19547b, #ffd89b);
+}
+
+div
+{
+    margin: 10% auto;
+    width: 450px;
+    box-shadow: 10px 10px rgba(5, 71, 138, 0.2);
+}
+
+h1
+{
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: normal;
+    background-color: rgba(5, 71, 138, 0.8);
+    padding: 5% 5%;
+    color: #ffff33;
+    font-size: 25px;
+}
+
+.fa-plus-square
+{
+    float: right;
+}
+
+input
+{
+    margin: 0;
+    width: 74%;
+    line-height: 45px;
+    padding: 0 5%;
+    border: none;
+    background-color: lightgrey;
+    box-sizing: border-box;
+    outline: none;
+}
+
+input:focus
+{
+    background-color: whitesmoke;
+    color: rgba(5, 71, 138, 0.8);
+}
+
+ul
+{
+    margin: 0;
+    padding-left: 0%;
+    list-style: none;
+}
+
+li
+{
+    line-height: 30px;
+    background-color: whitesmoke;
+    padding: 0 auto;
+    text-align: left;
+}
+
+li:nth-child(2n)
+{
+    background-color: lightgray;
+}
+
+.li_effect
+{
+    color: orange;
+    text-decoration: line-through;
+}
+
+span
+{
+    height: 40px;
+    width: 0px;
+    margin-right: 20px;
+    background: #DE6262;
+    background: -webkit-linear-gradient(to right, #FFB88C, #DE6262);
+    background: linear-gradient(to right, #FFB88C, #DE6262);
+    color: whitesmoke;
+    display: inline-block;
+    text-align: center;
+    opacity: 0;
+    transition: 0.4s linear;
+}
+
+li:hover span
+{
+    width: 40px;
+    opacity: 1;
+}
+
+#newTodo
+{
+    margin: 0;
+}
+
+button
+{
+    width: 25%;
+    line-height: 45px;
+    padding: 0 5%;
+    background-color: yellow;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    margin: 0;
+}

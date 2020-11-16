@@ -1,0 +1,21 @@
+<%- include ('partials/header') %>
+
+<div id="container">
+    <h1>TODO_LIST <i class="far fa-plus-square"></i></h1>
+    <form action="/todos" method="POST">
+        <div id="newTodo">
+            <input type="text" name="todo" placeholder="Add a new task" required>
+            <button type="submit">Add</button>
+        </div>
+    </form>
+    <ul>
+        <% tasks.forEach(function(task)
+        { %>
+            <form action="/todos/<%= task._id %>?_method=DELETE" method="POST">
+                <li><span><i class="fas fa-trash"></i></span> <%= task.name %></li>
+            </form>
+        <% }) %>
+    </ul>
+</div>
+
+<%- include ('partials/footer') %>
